@@ -1,0 +1,45 @@
+14:20:20.379 COMMENT   Engine           Test Scenario execution started
+14:20:20.379 INFO      Engine           Using context settings:
+  Engine Version       : 19.5.1
+  Environment id                : 5b508b8a787be73b59238d38
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : CWCC.COMPUWARE.COM
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : huk0320
+14:20:20.379 INFO      Engine           Setting variables from context and context data extensions
+14:20:20.379 INFO      Engine             id: environmentId      value: 5b508b8a787be73b59238d38
+14:20:20.379 INFO      Engine             id: environmentType    value: BATCH
+14:20:20.379 INFO      Engine             id: userId             value: huk0320
+14:20:20.379 INFO      Component        Interpreting Component: XARISCAL program:XARISCAL
+14:20:20.383 LOG       CWCC Batch       Component Runtime Settings:
+14:20:20.383 LOG       CWCC Batch         Load library              :SYS2.CW.XATESTER.SXATLOAD
+14:20:20.383 LOG       CWCC Batch         Additional load libraries :WPAAWJ.TTT.LOAD
+14:20:20.383 LOG       CWCC Batch         Listing libraries         :
+14:20:20.383 LOG       CWCC Batch         SysDebug libraries        :
+14:20:20.383 LOG       CWCC Batch         DB2 Subsystem ID          :
+14:20:20.383 LOG       CWCC Batch         DB2 plan                  :
+14:20:20.383 LOG       CWCC Batch         Call interface            :NONE
+14:20:20.383 LOG       CWCC Batch         Debugger type             :NONE
+14:20:20.383 LOG       CWCC Batch         Component type            :COBOL
+14:20:20.395 INFO      CWCC Batch       Sending Module execution request to Host for module:XARISCAL rollback:false
+14:20:21.345 INFO      HCIClient        Creating job directory /u/xatester/huk0320/eca7f0847d17470086021f452365da60
+14:20:21.594 LOG       CWCC Batch       Uploading input data for module XARISCAL
+14:20:22.630 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HUK0320</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan /><db2id /><rollback>false</rollback><jobdirectory>eca7f0847d17470086021f452365da60</jobdirectory><amode24>false</amode24><members><membername>XARISCAL</membername></members><loads><mainload>SYS2.CW.XATESTER.SXATLOAD</mainload><load>WPAAWJ.TTT.LOAD</load></loads><codepage>1047</codepage><lang>COBOL</lang></xatz_request></XATZREQ>
+14:20:22.999 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0781198</jobid><jobname>HUK0320E</jobname><starttime>20190909092022955</starttime></xatz_response></XATZRESP>
+14:20:23.001 LOG       HCIClient        Response received from Host. Message: JobId:J0781198
+14:20:23.001 INFO      HCIClient        Job has been started at host with JobId:J0781198
+14:20:23.002 INFO      CWCC Batch       Waiting for Execution Result from Host
+14:20:26.253 INFO      CWCC Batch       Component completed with program exit: +0
+14:20:26.371 LOG       CWCC Batch       Setting execution variable 'jobid' to J0781198
+14:20:26.371 LOG       CWCC Batch       Setting execution variable 'programexit' to 0
+14:20:26.565 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+14:20:27.055 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+14:20:27.055 INFO      Component        Finished interpreting Component: XARISCAL program:XARISCAL
+14:20:27.056 COMMENT   Engine           Test Scenario execution ended
